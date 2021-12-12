@@ -7,15 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsersComponent implements OnInit {
 
-  userName:string="";
+  // userName:string="";
   usersList = [];
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  onUserAdded() {
-    this.usersList.push(this.userName);
+  onUserAdded(event: string) {
+    this.usersList.push(event);
   }
 
 }
